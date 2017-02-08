@@ -1,0 +1,50 @@
+.topbar {
+    background-color: #fff;
+}
+.topbar .button-group {
+    width:100%;
+    background-color: #EEE;
+    border-color: #e7e7e7;
+    padding:0;
+}
+@media(min-width:768px) {
+    .topbar {
+        position: inherit;
+        margin: 0 0 0 250px;
+        border-left: 1px solid #e7e7e7;
+    }
+    .topbar .button-group {
+        width:100%;
+        background-color: #EEE;
+        border-color: #e7e7e7;
+    }
+    .topbar .button-group > button {
+        float: right;
+    }
+    .topbar .button-group > span {
+        float: right;
+        padding:0;
+    }
+}
+#button-sidebar {
+    text-align:left;
+    width:100%;
+    padding:0 8px;
+}
+#navbar-cus {
+    background-color: #EEE;
+}
+#a-search {
+    font-size: 20px;
+    line-height: 50px;
+    padding:0 8px;
+
+}
+input.search {
+    height:65%;
+    font-size: 20px;
+    line-height:20px;
+    padding:0;
+    display:inline;
+    width:80%;
+}

@@ -1,0 +1,33 @@
+<div class="navbar-default sidebar" role="navigation" ng-controller="sidebarCtrl">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav in" id="side-menu">
+            <li>
+                <a class="button-large" id="a-search">
+                    <i>
+                    <input class="search" placeholder=" search product..." ng-model="text">
+                          <button class="button button-square" ng-click="search()">
+                            <i class="fa fa-search"></i>
+                          </button>
+                    </i>
+                </a>
+            </li>
+            <li>
+                <button class="button button-rounded button-large" id="button-sidebar" ng-click="check(1)">
+                    <i class="fa fa-dashboard fa-fw"></i> Master Data
+                </button>
+            </li>
+            <li>
+                <button class="button button-rounded button-large" id="button-sidebar" ng-click="check(2)">
+                    <i class="fa fa-dashboard fa-fw"></i> Product
+                </button>
+            </li>
+
+        </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+</div>
+
+
+
+
+

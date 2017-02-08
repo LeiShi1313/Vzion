@@ -1,0 +1,1 @@
+"use strict";angular.module("sbAdminApp").controller("masterProcessTableCtrl",function($scope,$filter,masterProcessTableService){masterProcessTableService.query(function(data){$scope.process=data.process})});

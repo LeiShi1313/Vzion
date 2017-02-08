@@ -1,0 +1,1 @@
+"use strict";angular.module("sbAdminApp").controller("masterProductTableCtrl",function($scope,$filter,masterProductTableService){masterProductTableService.query(function(data){$scope.product=data.part})});

@@ -1,0 +1,22 @@
+<div class="container" style="text-align:center" ng-controller="ProductSelect">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Product Select</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div ng-repeat="row in objects" class="col-lg-4">
+        <div ui-sref="productdetail" class="panel panel-product">
+            <div class="panel-heading {{row.color}}">
+                <a>{{row.partNumber}}</a>
+            </div>
+            <div class="panel-body">
+                <p>{{row.partName}}</p>
+                <p>{{row.owner}}</p>
+                <p>{{row.updatetime}}
+            </div>
+        </div>
+    </div>
+               
+</div>

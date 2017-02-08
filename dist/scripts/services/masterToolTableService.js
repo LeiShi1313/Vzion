@@ -1,0 +1,1 @@
+angular.module("sbAdminApp").factory("masterToolTableService",["$resource",function($resource){return $resource("http://121.199.1.200:8088/tool",{},{query:{method:"GET",isArray:!1}})}]);

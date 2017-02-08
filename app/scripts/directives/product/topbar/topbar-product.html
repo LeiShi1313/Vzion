@@ -1,0 +1,42 @@
+<div class="topbar" ng-controller="topbarCtrl">
+  <div class="button-group" ng-style="{'display':selectedMenu=='product'?'block':'none'}">
+        <button type="button" class="button button-rounded button-large">Specifications</button>
+        <button type="button" class="button button-rounded button-large">Change Notice</button>
+        <span class="button-dropdown button-dropdown-rounded button-large" data-buttons="dropdown">
+            <button class="button button-rounded button-large" ng-init="focus=false;displaystyle='none'" ng-class="{'is-active':focus}" 
+            ng-focus="f()" ng-blur="b()">
+              Project <i class="fa fa-caret-down"></i>
+            </button>
+            <ul class="button-dropdown-list is-below" ng-style="{'display':displaystyle}">
+              <li><a ui-sref="productdetail">Option Link 1</a></li>
+              <li><a ui-sref="productdetail">Option Link 2</a></li>
+              <li class="button-dropdown-divider">
+                <a href="#">Option Link 3</a>
+              </li>
+            </ul>
+        </span>
+        <span class="button-dropdown button-dropdown-rounded button-large" data-buttons="dropdown">
+            <button class="button button-rounded button-large" ng-init="focus=false;displaystyle='none'" ng-class="{'is-active':focus}" 
+            ng-focus="f()" ng-blur="b()">
+              Product Data <i class="fa fa-caret-down"></i>
+            </button>
+            <ul class="button-dropdown-list is-below" ng-style="{'display':displaystyle}">
+              <li><a ui-sref="productdetail">Option Link 1</a></li>
+              <li><a ui-sref="productdetail">Option Link 2</a></li>
+              <li class="button-dropdown-divider">
+                <a href="#">Option Link 3</a>
+              </li>
+            </ul>
+        </span>
+        <button type="button" class="button button-rounded button-large">BOM</button>
+  </div>
+  <div class="button-group" ng-style="{'display':selectedMenu=='master'?'block':'none'}">
+        <button type="button" class="button button-rounded button-large">One Dream</button>
+        <button type="button" class="button button-rounded button-large">One World</button>
+        <button type="button" class="button button-rounded button-large">Hello</button>
+  </div>
+  <div class="button-group" ng-style="{'display':selectedMenu=='dashboard'?'block':'none'}">
+        <button type="button" class="button button-rounded button-large">World</button>
+        <button type="button" class="button button-rounded button-large">Hello</button>
+  </div>
+<div>
